@@ -1,0 +1,271 @@
+/**** GENERAL STYLES ****/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+html {
+    font-size: 10px;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+
+/****** NAVIGATION ******/
+nav {
+    padding: 1rem 20px;
+    background-color: #373c3f;
+    color: #fff;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: none;
+}
+nav ul li {
+    display: inline-block;
+    text-transform: uppercase;
+}
+nav ul li a {
+    color: #fff;
+    padding: 5px 20px;
+}
+
+#toggle-btn {
+    margin: -1rem -20px;
+    padding: 1rem 2rem;
+    background-color: #202529;
+}
+
+.nav-menu {
+    max-height: 0;
+    background-color: #202529;
+    transition: 0.3s ease-out;
+    overflow: hidden;
+}
+.nav-menu.open {
+    padding: 10px 0;
+    max-height: 170px;
+}
+.nav-menu li {
+    padding: 4px 0;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.nav-menu li a {
+    color: #fff;
+}
+.nav-menu li:hover a,
+nav ul li:hover a {
+    color: #19b4c6;
+}
+
+
+/****** BANNER ******/
+#banner {
+    padding: 0 3.5rem;
+    min-height: 175px;
+    background: #19b4c6;
+    background: linear-gradient(135deg, #19b4c6 0%, #17b3c5 40%, #12acc0 70%, #078aa4 100%);
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+#banner p {
+    margin-bottom: 15px;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+}
+#banner a {
+    color: #fff;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#banner a span {
+    opacity: 0.8;
+}
+#banner a:hover span {
+    opacity: 1;
+}
+
+
+/****** TEXT BOX ******/
+#text-box {
+    height: 77px;
+    background-color: #27212c;
+    font-size: 1.3rem;
+    line-height: 77px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+#text-box .text {
+    width: 80%;
+    color: #a08faf;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+#text-box .icon {
+    width: 20%;
+    background-color: #bc3183;
+    color: #fff;
+}
+
+
+/****** IMAGE SECTIONS ******/
+section {
+    display: flex;
+    flex-direction: column;
+}
+section > div {
+    height: 280px;
+    width: 100%;
+    font-size: 3rem;
+    line-height: 280px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#first { background-color: #5b0fa1; }
+#second { background-image: url("../img/second-section.png"); }
+#third { background-image: url("../img/third-section.png"); }
+#first a {
+    color: #fff;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#paragraph {
+    padding: 2.8rem;
+    background-color: #ebebeb;
+    color: #333;
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+}
+#paragraph > div {
+    display: flex;
+    flex-direction: row;
+}
+#paragraph h1 {
+    margin-bottom: 20px;
+    color: #088CA5;
+    font-size: 2.8rem;
+    line-height: 100%;
+}
+#paragraph p:last-child {
+    margin-left: 40px;
+    display: none;
+}
+
+@media (min-width: 640px) {
+    html {
+        font-size: 15px;
+    }
+
+    nav {
+        font-size: 2rem;
+    }
+
+    #banner {
+        min-height: 350px;
+    }
+    #banner p {
+        font-size: 2.5rem;
+    }
+
+    #text-box {
+        height: 150px;
+        line-height: 150px;
+    }
+
+    section > div {
+        height: 555px;
+        line-height: 555px;
+    }
+
+    #paragraph {
+        padding: 4rem;
+    }
+}
+
+@media (min-width: 980px) {
+    html {
+        font-size: 25px;
+    }
+    nav {
+        height: 100px;
+        font-size: 16px;
+    }
+    nav ul {
+        display: block;
+    }
+    nav .nav-brand,
+    #toggle-btn {
+        display: none;
+    }
+
+    #banner {
+        min-height: 550px;
+    }
+
+    #text-box {
+        height: 230px;
+        line-height: 230px;
+    }
+
+    section {
+        flex-direction: row;
+    }
+    section > div {
+        height: 285px;
+        font-size: 1.5rem;
+        line-height: 285px;
+    }
+
+    #paragraph {
+        padding: 2rem;
+        font-size: 0.7rem;
+        line-height: 1.3rem;
+    }
+    #paragraph h1 {
+        font-size: 1.5rem;
+    }
+    #paragraph p:last-child {
+        display: block;
+    }
+}
+
+@media (min-width: 1024px) {
+    #banner {
+        min-height: 575px;
+    }
+
+    #text-box {
+        height: 245px;
+        line-height: 245px;
+    }
+
+    section > div {
+        height: 300px;
+        line-height: 300px;
+    }
+}

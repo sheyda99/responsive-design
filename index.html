@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f9a01ea1da.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-brand">Navigation</div>
+            <ul>
+                <li><a href="#">PSD Websites</a></li>
+                <li><a href="#">UI Kits</a></li>
+                <li><a href="#">Premium PSD Files</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+            <div id="toggle-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+        <ul class="nav-menu">
+            <li><a href="#">PSD Websites</a></li>
+            <li><a href="#">UI Kits</a></li>
+            <li><a href="#">Premium PSD Files</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+
+        <div id="banner">
+            <div>
+                <p>Awesome Free PSD<br>templates & Recources</p>
+                <a href="#"><span>www.BlazRobar.com</span><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="text-box">
+            <div class="text">
+                <p>I'm like the Robin Hood of PSD files.</p>
+            </div>
+            <a class="icon" href="#">
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+
+        <section>
+            <div id="first">
+                <a href="#">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+            <div id="second"></div>
+            <div id="third"></div>
+        </section>
+
+        <div id="paragraph">
+            <h1>BlazRobar.com</h1>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ipsum non leo tristique eget facilisis lacus commodo. Curabitur vitae justo lorem, non ornare nibh. Pellentesque pretium, tellus ac ultrices faucibus, nibh mauris dapibus lorem, vitae viverra nisl elit sit amet libero. Nam eu blandit risus.<br><br>Phasellus imperdiet mattis nulla. Integer gravida imperdiet congue. Proin vitae pretium augue. Donec est sem, mattis et blandit ac, blandit at arcu. Donec tempus tincidunt suscipit. Suspendisse eu vulputate lacus.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ipsum non leo tristique eget facilisis lacus commodo. Curabitur vitae justo lorem, non ornare nibh. Pellentesque pretium, tellus ac ultrices faucibus, nibh mauris dapibus lorem, vitae viverra nisl elit sit amet libero. Nam eu blandit risus.<br><br>Phasellus imperdiet mattis nulla. Integer gravida imperdiet congue. Proin vitae pretium augue. Donec est sem, mattis et blandit ac, blandit at arcu. Donec tempus tincidunt suscipit. Suspendisse eu vulputate lacus.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const toggleBtn = document.querySelector("#toggle-btn");
+        const navMenu = document.querySelector(".nav-menu");
+        toggleBtn.addEventListener("click", function() {
+            if(navMenu.className === "nav-menu") {
+                navMenu.className = "nav-menu open";
+            } else {
+                navMenu.className = "nav-menu";
+            }
+        })
+    </script>
+</body>
+</html>
